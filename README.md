@@ -3,7 +3,7 @@
 ## Porject Name
 Concert.
 
-> Hello! I am a software developer! I can help you build a product, feature or website. Tak a look of my works.
+> Hello! I am a software developer! I can help you build a product, feature or website. Take a look of my works.
 If you like what you see and have a project you need coded, don’t hesitate and contact me.
 
 
@@ -16,7 +16,7 @@ If you like what you see and have a project you need coded, don’t hesitate and
 [Live Demo Linnk]()
 
 ## Prerequisites
-- The objectives of this project is:
+The objectives of this project is:
 - Use semantic HTML tags.
 - Apply best practices in HTML code.
 - Use CSS selectors correctly.
