@@ -1,121 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concert Hall</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concert Hall</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <div id="container">
-
+  <header>
     <nav id="nav-container">
-      <a href="index.html">
-      <img class="logo" src="./images/logo.png" alt="logo">
-      </a>
-      <ul class="nav-list-container">
-      <li><a href="">About</a></li>
-      <li><a href="">Program</a></li>
-      <li><a href="">Join</a></li>
-      <li><a href="">Sponsor</a></li>
-      <li><a href="">News</a></li>
-      <li class="box-item"><a href="">CC Campaign</a></li>
-      </ul>
+      <div class="mobile-menu">
+        <span class="material-icons hamburger">menu</span>
+      </div>
+      <div class="desktop-menu">
+        <a href="index.html">
+          <img class="logo" src="./images/logo.png" alt="logo">
+        </a>
+        <ul class="nav-list-container">
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="">Program</a></li>
+          <li><a href="">Join</a></li>
+          <li><a href="">Sponsor</a></li>
+          <li><a href="">News</a></li>
+          <li class="box-item"><a href="">CC Campaign</a></li>
+        </ul>
+      </div>
     </nav>
+  </header>
 
-    <section id="home-container">
-      <div class="home-hello">
-        <h1 class="home-h1">"Hello music world!"</h1>
-        <h2 class="home-h2">OUTDOOR CONCERT 2022</h2>
-        <p class="concert-description"></p>
-        <p class="concert-date">2022.10.15(SAT) ~ 16()SUN</p>
-        <p class="concert-place">@ Green Park, Salta Argentina</p>
-      </div>
-      <div class="home-information">
-        <h2>Information</h2>
-        <ul class="information-list">
-          <li>
-            <span class="material-icons">graphic_eq</span>
-            <h3>Singers and Bands</h3>
-            <p></p>
-          </li>
-          <li>
-            <span class="material-icons">event</span>
-            <h3>Porgram by day</h3>
-            <p></p>
-          </li>
-          <li>
-            <span class="material-icons">sensor_door</span>
-            <h3>Backstage</h3>
-            <p></p>
-          </li>
-          <li>
-            <span class="material-icons">map</span>
-            <h3>Getting here</h3>
-            <p></p>
-          </li>
-          <li>
-            <span class="material-icons">accessibility_new</span>
-            <h3>Accesibility</h3>
-            <p></p>
-          </li>
-        </ul>
-        <a href="">More...</a>
-      </div>
-      <div class="home-speakears"></div>
-      <div class="home-partners">
-        <h2>Partners</h2>
-        <ul class="partners-list">
-          <li class="part"><img src="./images/mozilla-logo.png" alt=""></li>
-          <li><img src="./images/google-logo.png" alt=""></li>
-          <li><img src="./images/naver-logo.png" alt=""></li>
-          <li><img src="./images/airbnb-logo.png" alt=""></li>
-          <li></li>
-        </ul>
-      </div>
-    </section>
+  <section class="home">
+    <h1 class="home-h1">"Hello! New Music World"</h1>
+    <h2 class="home-h2">GREEN PARK <br> OUTDOOR CONCERT <br> 2022</h2>
+    <p class="concert-description">International concert that presents outstanding performances by the world's greatest artists is taking place in October, in Argentina.</p>
+    <p class="concert-date">2022.10.15(SAT)~16()SUN</p>
+    <p class="concert-place">@ Green Park, Salta - Argentina</p>
+  </section>
 
-    <section class="about-container">
-      <div class="work-with-us">
-        <h2 class="home-h2">OUTDOOR CONCERT 2022</h2>
-        <p class="concert-description">The Oudoor Concert</p>
-        <p class="concert-date">Please contact us via Email for any further questions about Oudoor Concert 2022!</p>
-        <p class="concert-place">mail@email.com</p>
-      </div>
-      <div class="logo-explanation">
-        <h2>Outdoor Concert 2022 Logo</h2>
-        <p>The Logo of Oudoor Concert was decided throught the logo compettition from 8.January to 7.February.</p>
-        <img src="./images/logo.png" alt="logo">
-      </div>
-      <div class="past-concerts">
-        <h2>See the past Otdoor Concerts</h2>
-        <p>Take a look at the last two Oudoor Concerts which took place in Buenos Aires and Cordoba</p>
-        <div>
-          <ul>
-            <li>
-              <img src="./images/outdoor-concerts-1.jpg" alt="outdoor concert 2020">
-              <h3>2020</h3>
-              <p>Outdoor Concert 2020 in Buenos Aires</p>
-            </li>
-            <li>
-              <img src="./images/outdoor-concerts-2.jpg" alt="outdoor ocncert 2021">
-              <h3>2021</h3>
-              <p>Outdoor Concert 2020 in Cordoba</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+  <section class="information">
+    <h2 class="information-h2">Information</h2>
+    <ul class="information-list">
+      <li>
+        <span class="material-icons">graphic_eq</span>
+        <h3>Singers and Bands</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error earum recusandae. Vero, quod.</p>
+      </li>
+      <li>
+        <span class="material-icons">event</span>
+        <h3>Porgram by day</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error earum recusandae. Vero, quod.</p>
+      </li>
+      <li>
+        <span class="material-icons">sensor_door</span>
+        <h3>Backstage</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error earum recusandae. Vero, quod.</p>
+      </li>
+      <li>
+        <span class="material-icons">map</span>
+        <h3>Getting here</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error earum recusandae. Vero, quod.</p>
+      </li>
+      <li>
+        <span class="material-icons">accessibility_new</span>
+        <h3>Accesibility</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio error earum recusandae. Vero, quod.</p>
+      </li>
+    </ul>
+    <button class="join-btn" type="button">Join Outdoor Concert 2022</button>
+  </section>
 
-    <footer class="footer-container">
-      <img src="./images/logo.png" alt="logo">
-      <p>2022 Emilia Zambrano. Some Rights Reserved. Website design based on a Behance template by Cindy Shin</p>
-    </footer>
+  <section class="speakears"></section>
 
-  </div>
+  <footer id="home-footer-container">
+    <img class="logo" src="./images/logo.png" alt="logo">
+    <p>2022 Emilia Zambrano. Some Rights Reserved. Website design based on a Behance template by Cindy Shin</p>
+  </footer>
+
+  
 </body>
 </html>

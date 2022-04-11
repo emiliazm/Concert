@@ -1,0 +1,148 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#home-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+}
+
+/* nav */
+.material-icons.hamburger {
+  font-size: calc(5vw + 2vw);
+  color: #273130;
+  width: fit-content;
+  margin: 2vw 5vw;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.logo {
+  width: 10%;
+}
+
+/* home */
+.home {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10vw 5vw;
+}
+
+.home-h1 {
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  font-size: calc(3vw + 2vw);
+  margin: 0;
+}
+
+.home-h2 {
+  color: #ec5242;
+  font-family: 'Candal', sans-serif;
+  max-width: 100%;
+  font-size: calc(5.6vw + 2vw);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.concert-description {
+  color: #272a31;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  border: solid 5px rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
+  line-height: 4vw;
+  padding: 3vw;
+  margin: 6vw 0 2vw;
+}
+
+.concert-date {
+  color: #272a31;
+  font-family: 'Candal', sans-serif;
+  font-size: calc(4vw + 2vw);
+  margin: 0;
+}
+
+.concert-place {
+  color: #272a31;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: calc(2vw + 2vw);
+  margin: 2vw 0;
+}
+
+/* information section */
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/background-info.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information-h2 {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(2vw + 2vw);
+  letter-spacing: 4px;
+  margin: 8vw;
+}
+
+.information-list {
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 0;
+  width: 90vw;
+}
+
+.information-list li {
+  display: flex;
+  align-items: center;
+  gap: 6vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4vw;
+}
+
+.information-list .material-icons {
+  font-size: 10vw;
+}
+
+.information-list h3 {
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(1.5vw + 2vw);
+  width: 28%;
+}
+
+.information-list p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  line-height: 4vw;
+  width: 60%;
+  letter-spacing: 1px;
+}
+
+.join-btn {
+  background-color: #ec5242;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(1.5vw + 2vw);
+  border: none;
+  height: 15vw;
+  width: 80vw;
+  margin: 8vw;
+}
+
+/* partners section */
+
