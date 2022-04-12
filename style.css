@@ -1,6 +1,8 @@
+/* stylelint-disable csstree/validator */
 body {
   padding: 0;
   margin: 0;
+  min-width: 320px;
 }
 
 #home-container {
@@ -45,19 +47,19 @@ body {
   color: #ec5242;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  font-size: calc(3vw + 1vw);
+  font-size: clamp(1rem, 3vw, 2.2rem);
   margin: 0;
 }
 
 .home-h2 {
   font-family: 'Candal', sans-serif;
+  font-size: clamp(1.3rem, 8vw, 3.2rem);
   background-image: url(./images/back-text.jpg);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   max-width: 100%;
-  font-size: calc(5.6vw + 1vw);
   margin: 0;
   white-space: nowrap;
   line-height: 90%;
@@ -66,6 +68,7 @@ body {
 .concert-description {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
+  font-size: clamp(0.8rem, 2.5vw, 1.4rem);
   border: solid 5px rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.7);
   line-height: 5vw;
@@ -76,7 +79,7 @@ body {
 .concert-date {
   color: #5b606c;
   font-family: 'Candal', sans-serif;
-  font-size: calc(4vw + 0.5vw);
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
   margin: 0;
 }
 
@@ -84,8 +87,8 @@ body {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: calc(2vw + 0.5vw);
-  margin: 3vw 0;
+  font-size: clamp(0.8rem, 3vw, 1.8rem);
+  margin: 1.5vw 0;
 }
 
 /* information section */
@@ -98,12 +101,14 @@ body {
   background-size: cover;
 }
 
-.information-h2 {
+.information-h2,
+.partners-h2 {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: calc(3vw + 1vw);
+  font-size: clamp(0.8rem, 3vw, 1.8rem);
   letter-spacing: 4px;
   margin: 8vw;
+  border-bottom: #ec5242 2px solid;
 }
 
 .information-list {
@@ -132,21 +137,20 @@ body {
 }
 
 .information-list .material-icons {
-  font-size: 5vw;
+  font-size: 8vw;
   flex: 1;
 }
 
 .information-list h3 {
   color: #ec5242;
   font-family: 'Lato', sans-serif;
-  font-size: calc(1.5vw + 1vw);
-  width: 28%;
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
 }
 
 .information-list p {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: calc(1.2vw + 1vw);
+  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
   line-height: 4vw;
   letter-spacing: 1px;
   width: 60%;
@@ -156,11 +160,15 @@ body {
   background-color: #ec5242;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: calc(2vw + 2vw);
+  font-size: clamp(1.2rem, 2vw, 2rem);
   border: none;
   height: 20vw;
   width: 70vw;
   margin: 8vw;
+}
+
+.see-more-information {
+  display: none;
 }
 
 /* partners section */
@@ -214,7 +222,6 @@ body {
     list-style-type: none;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-size: calc(0.5vw + 1vw);
   }
 
   a {
@@ -235,17 +242,27 @@ body {
 
   /* home section */
   #home {
-    height: 70vh;
-    padding: 8vw 20vw 10vw 12vw;
+    height: 100%;
+    padding: 10vw 20vw 10vw 12vw;
   }
 
   .concert-description {
-    max-width: 72vw;
     padding: 0.5vw 1.5vw;
     margin-top: 3vw;
+    line-height: 3.5vw;
   }
 
   /* information section */
+  #information {
+    height: 70vh;
+    justify-content: space-around;
+  }
+
+  .information-h2,
+  .partners-h2 {
+    margin: 0;
+  }
+
   .information-list {
     flex-direction: row;
     justify-content: space-around;
@@ -258,23 +275,26 @@ body {
     gap: 0;
     min-width: 10vw;
     max-width: 30vw;
-    padding: 0;
+    padding: 0.5vw;
     height: 30vh;
   }
 
   .info-icon {
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    gap: 0;
     width: 100%;
+    padding-top: 2vw;
+    gap: 0;
+  }
+
+  .information-list .material-icons {
+    font-size: 4vw;
   }
 
   .info-icon h3 {
-    width: 100%;
+    width: 90%;
     margin: 0;
     text-align: center;
-    font-size: 1.8vw;
   }
 
   .information-list p {
@@ -282,5 +302,66 @@ body {
     line-height: normal;
     text-align: center;
     width: 90%;
+  }
+
+  .join-btn {
+    display: none;
+  }
+
+  .see-more-information {
+    display: flex;
+    color: #fff;
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(0.7rem, 1.2vw, 2rem);
+  }
+
+  /* partners section */
+  #partners-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    padding: 5vw 5vw;
+    background-color: #5b606c;
+  }
+
+  .partners-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
+  }
+
+  /* footer section */
+  #home-footer-container {
+    display: flex;
+    padding: 2vw 10vw;
+  }
+
+  .footer-list {
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-li {
+    width: 10%;
+    justify-self: center;
+  }
+
+  .logo-footer {
+    width: 100%;
+  }
+
+  .p-footer {
+    color: #5b606c;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    width: fit-content
   }
 }
