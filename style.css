@@ -10,11 +10,18 @@ body {
 }
 
 /* nav */
+.mobile-menu {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .material-icons.hamburger {
   font-size: calc(5vw + 2vw);
-  color: #273130;
+  color: #5b606c;
   width: fit-content;
   margin: 2vw 5vw;
+  
 }
 
 .desktop-menu {
@@ -32,7 +39,7 @@ body {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 10vw 5vw;
+  padding: 15vw 5vw 18vw;
 }
 
 .home-h1 {
@@ -44,8 +51,12 @@ body {
 }
 
 .home-h2 {
-  color: #ec5242;
   font-family: 'Candal', sans-serif;
+  background-image: url(./images/back-text.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   max-width: 100%;
   font-size: calc(5.6vw + 2vw);
   margin: 0;
@@ -53,29 +64,28 @@ body {
 }
 
 .concert-description {
-  color: #272a31;
+  color: #5b606c;
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
   border: solid 5px rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.7);
-  line-height: 4vw;
+  line-height: 5vw;
   padding: 3vw;
   margin: 6vw 0 2vw;
 }
 
 .concert-date {
-  color: #272a31;
+  color: #5b606c;
   font-family: 'Candal', sans-serif;
   font-size: calc(4vw + 2vw);
   margin: 0;
 }
 
 .concert-place {
-  color: #272a31;
+  color: #5b606c;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   font-size: calc(2vw + 2vw);
-  margin: 2vw 0;
+  margin: 3vw 0;
 }
 
 /* information section */
@@ -91,17 +101,17 @@ body {
 .information-h2 {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: calc(2vw + 2vw);
+  font-size: calc(4vw + 2vw);
   letter-spacing: 4px;
   margin: 8vw;
 }
 
 .information-list {
-  list-style-type: none;
-  color: #fff;
   display: flex;
   flex-direction: column;
   gap: 5vw;
+  list-style-type: none;
+  color: #fff;
   padding: 0;
   width: 90vw;
 }
@@ -112,6 +122,13 @@ body {
   gap: 6vw;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 4vw;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  width: 40%;
 }
 
 .information-list .material-icons {
@@ -129,20 +146,27 @@ body {
   color: #fff;
   font-family: 'Lato', sans-serif;
   line-height: 4vw;
-  width: 60%;
   letter-spacing: 1px;
+  width: 60%;
 }
 
 .join-btn {
   background-color: #ec5242;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: calc(1.5vw + 2vw);
+  font-size: calc(2vw + 2vw);
   border: none;
-  height: 15vw;
-  width: 80vw;
+  height: 20vw;
+  width: 70vw;
   margin: 8vw;
 }
 
 /* partners section */
+#partner-container {
+  display: none;
+}
 
+/* footer */
+#home-footer-container {
+  display: none;
+}
