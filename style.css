@@ -21,7 +21,6 @@ body {
   color: #5b606c;
   width: fit-content;
   margin: 2vw 5vw;
-  
 }
 
 .desktop-menu {
@@ -101,7 +100,7 @@ body {
 .information-h2 {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: calc(4vw + 2vw);
+  font-size: calc(3vw + 2vw);
   letter-spacing: 4px;
   margin: 8vw;
 }
@@ -162,8 +161,22 @@ body {
 }
 
 /* partners section */
-#partner-container {
+#partners-container {
   display: none;
+}
+
+/* featured bands section */
+#bands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bands-h2 {
+  color: #5b606c;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(3vw + 2vw);
+  margin: 8vw;
 }
 
 /* footer */
