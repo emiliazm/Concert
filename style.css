@@ -32,7 +32,7 @@ body {
 }
 
 /* home */
-.home {
+#home {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/background.jpg);
@@ -45,7 +45,7 @@ body {
   color: #ec5242;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  font-size: calc(3vw + 2vw);
+  font-size: calc(3vw + 1vw);
   margin: 0;
 }
 
@@ -57,7 +57,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   max-width: 100%;
-  font-size: calc(5.6vw + 2vw);
+  font-size: calc(5.6vw + 1vw);
   margin: 0;
   white-space: nowrap;
 }
@@ -75,7 +75,7 @@ body {
 .concert-date {
   color: #5b606c;
   font-family: 'Candal', sans-serif;
-  font-size: calc(4vw + 2vw);
+  font-size: calc(4vw + 1vw);
   margin: 0;
 }
 
@@ -83,12 +83,12 @@ body {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: calc(2vw + 2vw);
+  font-size: calc(2vw + 1vw);
   margin: 3vw 0;
 }
 
 /* information section */
-.information {
+#information {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -144,6 +144,7 @@ body {
 .information-list p {
   color: #fff;
   font-family: 'Lato', sans-serif;
+  font-size: calc(1.2vw + 2vw);
   line-height: 4vw;
   letter-spacing: 1px;
   width: 60%;
@@ -183,3 +184,4 @@ body {
 #home-footer-container {
   display: none;
 }
+
