@@ -107,7 +107,7 @@ a {
 .concert-contact {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.8rem, 2.5vw, 1.4rem);
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
   line-height: 5vw;
   margin: 6vw 0 0;
   text-align: center;
@@ -116,7 +116,7 @@ a {
 .concert-description {
   border: solid 1px rgba(91, 96, 108, 0.2);
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 5vw;
+  padding: 2vw;
 }
 
 .concert-contact {
@@ -126,7 +126,7 @@ a {
 .concert-email {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.8rem, 2.5vw, 1.4rem);
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
   font-weight: bold;
   text-decoration: underline;
   margin: 0;
@@ -318,6 +318,21 @@ a {
   a {
     text-decoration: none;
     color: #5b606c;
+  }
+
+  /* concert section */
+  #concert {
+    height: 90vh;
+    padding: 10vh 5vw;
+  }
+
+  .concert-contact {
+    margin-top: 3vw;
+  }
+
+  .concert-description {
+    width: 65vw;
+    height: fit-content;
   }
 
   /* past section */
