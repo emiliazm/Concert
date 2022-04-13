@@ -256,7 +256,7 @@ a {
 
 .footer-list {
   display: flex;
-  gap: 10vw;
+  /* gap: 10vw; */
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
@@ -279,7 +279,7 @@ a {
   font-family: 'Lato', sans-serif;
   font-size: clamp(0.8rem, 2vw, 1rem);
   font-weight: lighter;
-  width: 50vw;
+  width: 45vw;
 }
 
 @media screen and (min-width: 768px) {
