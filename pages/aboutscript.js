@@ -8,6 +8,6 @@ barImage.addEventListener('click', () => {
 crossMenu.addEventListener('click', () => {
   desktopMenu.style.display = 'none';
 });
-document.querySelectorAll('.mobile-nav-list-container').forEach((n) => n.addEventListener('click', () => {
+document.querySelectorAll('.hamburger-nav-list').forEach((n) => n.addEventListener('click', () => {
   desktopMenu.style.display = 'none';
 }));
