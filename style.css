@@ -105,7 +105,7 @@ body {
 .partners-h2 {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.8rem, 3vw, 1.8rem);
+  font-size: clamp(0.8rem, 3vw, 1.3rem);
   letter-spacing: 4px;
   margin: 8vw;
   border-bottom: #ec5242 2px solid;
@@ -274,7 +274,7 @@ body {
     justify-content: space-around;
     gap: 0;
     min-width: 10vw;
-    max-width: 30vw;
+    width: 15vw;
     padding: 0.5vw;
     height: 30vh;
   }
@@ -344,7 +344,7 @@ body {
     display: flex;
     gap: 10vw;
     align-items: center;
-    
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
