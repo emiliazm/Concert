@@ -230,6 +230,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 10vw;
+  height: 100vh;
 }
 
 .bands-h2 {
