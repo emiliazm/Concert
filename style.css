@@ -162,8 +162,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: clamp(1.2rem, 2vw, 2rem);
   border: none;
-  height: 20vw;
-  width: 70vw;
+  height: 15vw;
+  width: 65vw;
   margin: 8vw;
 }
 
@@ -186,7 +186,7 @@ body {
 .bands-h2 {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
-  font-size: calc(3vw + 2vw);
+  font-size: clamp(0.8rem, 3vw, 1.3rem);
   margin: 8vw;
 }
 
