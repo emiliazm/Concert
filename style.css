@@ -229,8 +229,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10vw;
-  height: 100vh;
+  margin-bottom: 10vh;
 }
 
 .bands-h2 {
