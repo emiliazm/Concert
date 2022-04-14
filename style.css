@@ -253,12 +253,20 @@ body {
   justify-content: center;
   gap: 4vw;
   width: 90%;
+  margin-bottom: 5vh;
 }
 
 .singer {
   display: flex;
   align-items: flex-start;
-  gap: 1vw;
+  gap: 2rem;
+  height: 5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  background-image: url(./images/singer-back.png);
+  background-repeat: no-repeat;
+  background-size: 3rem 3rem;
+  background-position: top left;
 }
 
 .singer-img {
@@ -455,6 +463,7 @@ body {
   .band-grid {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 4rem;
   }
 
   .singer {
