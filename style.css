@@ -1,4 +1,3 @@
-/* stylelint-disable csstree/validator */
 body {
   padding: 0;
   margin: 0;
@@ -56,7 +55,7 @@ body {
   list-style-type: none;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  font-size: clamp(1rem, 3vw, 2.2rem);
+  font-size: calc(1rem + 1.1rem);
   padding: 0;
   margin-top: 10vw;
 }
@@ -95,16 +94,16 @@ a {
   color: #ec5242;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  font-size: clamp(1rem, 3vw, 2.2rem);
+  font-size: calc(max(0.9vw, 1.8rem));
   margin: 0;
 }
 
 .home-h2 {
   font-family: 'Candal', sans-serif;
-  font-size: clamp(1.3rem, 8vw, 3.2rem);
+  font-size: calc(max(5vw, 2.9rem));
   background-image: url(./images/back-text.jpg);
   background-size: cover;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
   max-width: 100%;
@@ -116,7 +115,7 @@ a {
 .concert-description {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.8rem, 2.5vw, 1.4rem);
+  font-size: calc(max(0.8rem, 1rem));
   border: solid 5px rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.7);
   line-height: 5vw;
@@ -127,7 +126,7 @@ a {
 .concert-date {
   color: #5b606c;
   font-family: 'Candal', sans-serif;
-  font-size: clamp(1.2rem, 4vw, 2.2rem);
+  font-size: calc(max(1vw, 1.5rem));
   margin: 0;
 }
 
@@ -135,7 +134,7 @@ a {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  font-size: clamp(0.8rem, 3vw, 1.8rem);
+  font-size: calc(max(0.8vw, 1.2rem));
   margin: 1.5vw 0;
 }
 
@@ -147,13 +146,14 @@ a {
   background-image: url(./images/background-info.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 320px;
 }
 
 .information-h2,
 .partners-h2 {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.8rem, 3vw, 1.3rem);
+  font-size: calc(max(0.8vw, 1.2rem));
   letter-spacing: 4px;
   margin: 8vw;
   border-bottom: #ec5242 2px solid;
@@ -166,13 +166,13 @@ a {
   list-style-type: none;
   color: #fff;
   padding: 0;
-  width: 80vw;
+  width: 80%;
 }
 
 .information-list li {
   display: flex;
   align-items: center;
-  gap: 6vw;
+  gap: 4vw;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 4vw;
 }
@@ -185,20 +185,20 @@ a {
 }
 
 .information-list .material-icons {
-  font-size: 8vw;
+  font-size: calc(max(0.5vw, 3rem));
   flex: 1;
 }
 
 .information-list h3 {
   color: #ec5242;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  font-size: calc(max(0.5vw, 1rem));
 }
 
 .information-list p {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.7rem, 1.5vw, 1.1rem);
+  font-size: calc(max(0.1vw, 0.7rem));
   line-height: 4vw;
   letter-spacing: 1px;
   width: 60%;
@@ -208,7 +208,7 @@ a {
   background-color: #ec5242;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-size: calc(max(0.8vw, 1rem));
   border: none;
   height: 15vw;
   width: 65vw;
@@ -235,7 +235,7 @@ a {
 .bands-h2 {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.8rem, 3vw, 1.3rem);
+  font-size: calc(max(0.8vw, 1.2rem));
   margin: 8vw;
 }
 
@@ -244,7 +244,7 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 4vw;
-  width: 80vw;
+  width: 90%;
 }
 
 .singer {
@@ -254,14 +254,14 @@ a {
 }
 
 .singer-img {
-  width: 17vw;
-  height: 17vw;
+  width: 5rem;
+  height: 5rem;
 }
 
 .info-h3 {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+  font-size: calc(max(0.8vw, 1rem));
   font-weight: bold;
   margin: 0;
 }
@@ -269,7 +269,7 @@ a {
 .info-h4 {
   color: #ec5242;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.7rem, 1vw, 3rem);
+  font-size: calc(max(0.8vw, 0.7rem));
   font-weight: lighter;
   font-style: italic;
   text-align: justify;
@@ -279,7 +279,7 @@ a {
 .info-p {
   color: #5b606c;
   font-family: 'Lato', sans-serif;
-  font-size: clamp(0.7rem, 1vw, 3rem);
+  font-size: calc(max(0.8vw, 0.7rem));
   font-weight: lighter;
   margin: 0;
 }
@@ -344,6 +344,7 @@ a {
     padding: 0.5vw 1.5vw;
     margin-top: 3vw;
     line-height: 3.5vw;
+    max-width: 80%;
   }
 
   /* information section */
@@ -359,30 +360,30 @@ a {
 
   .information-list {
     flex-direction: row;
-    justify-content: space-around;
-    gap: 2vw;
+    justify-content: center;
+    gap: 0.2vw;
   }
 
   .information-list li {
     flex-direction: column;
-    justify-content: space-around;
     gap: 0;
     min-width: 10vw;
-    width: 15vw;
-    padding: 0.5vw;
-    height: 30vh;
+    width: 10rem;
+    padding: 1rem 0.3rem;
+    max-height: 15rem;
   }
 
   .info-icon {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding-top: 2vw;
+    padding-bottom: 0;
     gap: 0;
   }
 
   .information-list .material-icons {
     font-size: 4vw;
+    padding-bottom: 0.3vw;
   }
 
   .info-icon h3 {
@@ -392,7 +393,7 @@ a {
   }
 
   .information-list p {
-    font-size: 10px;
+    /* font-size: 10px; */
     line-height: normal;
     text-align: center;
     width: 90%;
@@ -407,7 +408,7 @@ a {
     color: #fff;
     text-decoration: underline;
     font-family: 'Lato', sans-serif;
-    font-size: clamp(0.7rem, 1.2vw, 2rem);
+    font-size: calc(max(0.8vw, 0.7rem));
   }
 
   /* bands section */
@@ -460,7 +461,7 @@ a {
   }
 
   .logo-li {
-    width: 10%;
+    width: 8%;
     justify-self: center;
   }
 
@@ -471,7 +472,7 @@ a {
   .p-footer {
     color: #5b606c;
     font-family: 'Lato', sans-serif;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: calc(max(0.8vw, 0.7rem));
     font-weight: lighter;
     width: fit-content;
   }

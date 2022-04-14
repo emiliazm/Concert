@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const barImage = document.querySelector('.mobile-menu');
 const crossMenu = document.querySelector('.close');
 const desktopMenu = document.querySelector('.mobile-menu-up');
@@ -18,7 +17,7 @@ const bands = [
     image: './images/m-mileyccyrus.webp',
     name: 'Miley Cyrus',
     description1: 'American singer, songwriter, actress, and television personality.',
-    description2: 'Known for her distinctive raspy voice, her music incorporates elements of varied styles and genres, including pop, country pop, hip hop, experimental, and rock.',
+    description2: 'Known for her distinctive raspy voice, her music incorporates elements of varied styles and genres.',
   },
 
   {
