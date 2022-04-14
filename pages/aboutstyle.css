@@ -24,7 +24,7 @@ body {
 }
 
 .material-icons.hamburger {
-  font-size: calc(5vw + 2vw);
+  font-size: calc(max(1rem, 1.7rem));
   color: #5b606c;
   width: fit-content;
   margin: 2vw 5vw;
@@ -61,7 +61,6 @@ body {
   list-style-type: none;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
-  font-size: calc(1rem + 1.1rem);
   padding: 0;
   margin-top: 10vw;
 }

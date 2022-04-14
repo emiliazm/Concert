@@ -23,7 +23,7 @@ body {
 }
 
 .material-icons.hamburger {
-  font-size: calc(5vw + 2vw);
+  font-size: calc(max(1rem, 1.7rem));
   color: #5b606c;
   width: fit-content;
   margin: 2vw 5vw;
@@ -430,7 +430,6 @@ body {
   }
 
   .information-list .material-icons {
-    font-size: 4vw;
     padding-bottom: 0.3vw;
   }
 
@@ -441,7 +440,6 @@ body {
   }
 
   .information-list p {
-    /* font-size: 10px; */
     line-height: normal;
     text-align: center;
     width: 90%;
@@ -463,11 +461,13 @@ body {
   .band-grid {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 4rem;
+    max-width: 85%;
   }
 
   .singer {
-    width: 32vw;
+    width: 40%;
   }
 
   .singer-img {
