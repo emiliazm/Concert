@@ -1,0 +1,527 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+}
+
+#home-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  min-width: 320px;
+}
+
+/* nav */
+#dark-nav-container {
+  display: none;
+}
+
+.mobile-menu {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.material-icons.hamburger {
+  font-size: calc(max(1rem, 1.7rem));
+  color: #5b606c;
+  width: fit-content;
+  margin: 2vw 5vw;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+.mobile-menu-up {
+  display: none;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5%;
+  width: 90%;
+  height: 100%;
+  min-width: 320px;
+}
+
+.mobile-head-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: rgba(91, 96, 108, 0.2) 1px solid;
+}
+
+.mobile-nav-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+  list-style-type: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  padding: 0;
+  margin-top: 10vw;
+}
+
+.mobile-nav-list-container li {
+  font-size: calc(max(0.1vw, 1rem));
+}
+
+.mobile-nav-list-container a {
+  text-decoration: none;
+  color: #5b606c;
+}
+
+.mobile-nav-list-container .about-li {
+  color: #ec5242;
+  font-weight: bold;
+}
+
+.box-item {
+  color: #ec5242;
+  border: #ec5242 2px solid;
+  padding: 1vw;
+}
+
+.logo {
+  width: 10%;
+}
+
+/* home */
+#home {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15vw 5vw 18vw;
+}
+
+.home-h1 {
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  font-size: calc(max(0.9vw, 1.8rem));
+  margin: 0;
+}
+
+.home-h2 {
+  font-family: 'Candal', sans-serif;
+  font-size: calc(max(5vw, 2.9rem));
+  background-image: url(./images/back-text.jpg);
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  max-width: 100%;
+  margin: 0;
+  white-space: nowrap;
+  line-height: 90%;
+}
+
+.concert-description {
+  color: #5b606c;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.8rem, 1rem));
+  border: solid 5px rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.7);
+  line-height: 5vw;
+  padding: 3vw;
+  margin: 6vw 0 2vw;
+}
+
+.concert-date {
+  color: #5b606c;
+  font-family: 'Candal', sans-serif;
+  font-size: calc(max(1vw, 1.5rem));
+  margin: 0;
+}
+
+.concert-place {
+  color: #5b606c;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: calc(max(0.8vw, 1.2rem));
+  margin: 1.5vw 0;
+}
+
+/* information section */
+#information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/background-info.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 320px;
+}
+
+.information-h2,
+.partners-h2 {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.8vw, 1.2rem));
+  letter-spacing: 4px;
+  margin: 8vw;
+  border-bottom: #ec5242 2px solid;
+}
+
+.information-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  list-style-type: none;
+  color: #fff;
+  padding: 0;
+  width: 80%;
+}
+
+.information-list li {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4vw;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  width: 40%;
+}
+
+.information-list .material-icons {
+  font-size: calc(max(0.5vw, 3rem));
+}
+
+.information-list h3 {
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.5vw, 1rem));
+}
+
+.information-list p {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.1vw, 0.7rem));
+  line-height: 4vw;
+  letter-spacing: 1px;
+  width: 60%;
+}
+
+.join-btn {
+  background-color: #ec5242;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.8vw, 1rem));
+  border: none;
+  height: 15vw;
+  width: 65vw;
+  margin: 8vw;
+}
+
+.see-more-information {
+  display: none;
+}
+
+/* partners section */
+#partners-container {
+  display: none;
+}
+
+/* featured bands section */
+#bands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.bands-h2 {
+  color: #5b606c;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.8vw, 1.2rem));
+  margin: 8vw;
+}
+
+.band-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4vw;
+  width: 90%;
+  margin-bottom: 5vh;
+}
+
+.singer {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  height: 5rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  background-image: url(./images/singer-back.png);
+  background-repeat: no-repeat;
+  background-size: 3rem 3rem;
+  background-position: top left;
+}
+
+.singer-img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.info-h3 {
+  color: #5b606c;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.8vw, 1rem));
+  font-weight: bold;
+  margin: 0;
+}
+
+.info-h4 {
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.8vw, 0.7rem));
+  font-weight: lighter;
+  font-style: italic;
+  text-align: justify;
+  margin: 0 0 1.5vw;
+}
+
+.info-p {
+  color: #5b606c;
+  font-family: 'Lato', sans-serif;
+  font-size: calc(max(0.8vw, 0.7rem));
+  font-weight: lighter;
+  margin: 0;
+}
+
+/* footer */
+#home-footer-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  /* dark menu */
+  #dark-nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 320px;
+    background-color: #5b606c;
+    padding-right: 8vw;
+  }
+
+  .dark-list {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dark-icon {
+    width: 10px;
+  }
+
+  .dark-list a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    font-size: calc(max(1vw, 0.5rem));
+    text-decoration: none;
+  }
+
+  /* desktop menu */
+  .mobile-menu {
+    display: none;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: #fff;
+  }
+
+  .logo {
+    width: 10vh;
+  }
+
+  .desktop-logo {
+    width: 30%;
+  }
+
+  .nav-list-container {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .nav-list-container a {
+    text-decoration: none;
+    color: #5b606c;
+  }
+
+  .nav-list-container .about-li {
+    color: #ec5242;
+    font-weight: bold;
+  }
+
+  /* home section */
+  #home {
+    height: 100%;
+    padding: 10vw 20vw 10vw 12vw;
+  }
+
+  .concert-description {
+    padding: 0.5vw 1.5vw;
+    margin-top: 3vw;
+    line-height: 3.5vw;
+    max-width: 80%;
+  }
+
+  /* information section */
+  #information {
+    height: 70vh;
+    justify-content: space-around;
+  }
+
+  .information-h2,
+  .partners-h2 {
+    margin: 0;
+  }
+
+  .information-list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.2vw;
+  }
+
+  .information-list li {
+    flex-direction: column;
+    gap: 0;
+    min-width: 10vw;
+    width: 10rem;
+    padding: 1rem 0.3rem;
+    max-height: 15rem;
+  }
+
+  .info-icon {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0;
+    gap: 0;
+  }
+
+  .information-list .material-icons {
+    padding-bottom: 0.3vw;
+  }
+
+  .info-icon h3 {
+    width: 90%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .information-list p {
+    line-height: normal;
+    text-align: center;
+    width: 90%;
+  }
+
+  .join-btn {
+    display: none;
+  }
+
+  .see-more-information {
+    display: flex;
+    color: #fff;
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(max(0.8vw, 0.7rem));
+  }
+
+  /* bands section */
+  .band-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4rem;
+    max-width: 85%;
+  }
+
+  .singer {
+    width: 40%;
+  }
+
+  .singer-img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  /* partners section */
+  #partners-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    padding: 5vw 5vw;
+    background-color: #5b606c;
+  }
+
+  .partners-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
+  }
+
+  /* footer section */
+  #home-footer-container {
+    display: flex;
+    padding: 2vw 10vw;
+  }
+
+  .footer-list {
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-li {
+    width: 8%;
+    justify-self: center;
+  }
+
+  .logo-footer {
+    width: 100%;
+  }
+
+  .p-footer {
+    color: #5b606c;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(max(0.8vw, 0.7rem));
+    font-weight: lighter;
+    width: fit-content;
+  }
+}
