@@ -1,5 +1,3 @@
-/* stylelint-disable csstree/validator */
-
 body {
   padding: 0;
   margin: 0;
@@ -9,13 +7,16 @@ body {
 #about-container {
   display: flex;
   flex-direction: column;
-  max-width: 100vw;
   position: absolute;
   min-width: 320px;
 }
 
 /* nav */
-.mobile-menu {
+#dark-nav-container {
+  display: none;
+}
+
+#nav-container {
   min-width: 320px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/background.jpg);
   background-repeat: no-repeat;
@@ -39,9 +40,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 5vw;
+  padding: 5%;
   width: 90%;
   height: 100%;
+  min-width: 320px;
 }
 
 .mobile-head-menu {
@@ -64,12 +66,16 @@ body {
   margin-top: 10vw;
 }
 
-a {
+.mobile-nav-list-container li {
+  font-size: calc(max(0.1vw, 1rem));
+}
+
+.mobile-nav-list-container a {
   text-decoration: none;
   color: #5b606c;
 }
 
-.home-li {
+.mobile-nav-list-container .home-li {
   color: #ec5242;
   font-weight: bold;
 }
@@ -141,6 +147,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 5vw 5vw 10vw;
+  min-width: 320px;
 }
 
 .logo-h2,
@@ -185,6 +192,7 @@ a {
   justify-content: space-between;
   padding: 7vw 5vw;
   border-top: rgba(91, 96, 108, 0.2) 1px solid;
+  min-width: 320px;
 }
 
 .past-list {
@@ -239,6 +247,7 @@ a {
   gap: 8vw;
   padding: 5vw 5vw 10vw;
   background-color: #5b606c;
+  min-width: 320px;
 }
 
 .partners-box {
@@ -254,18 +263,17 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2vw 10vw;
+  padding: 2vh 0;
+  min-width: 320px;
 }
 
 .footer-list {
   display: flex;
-  gap: 10vw;
+  gap: 20vw;
   align-items: center;
-  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 70vw;
 }
 
 .logo-li {
@@ -274,7 +282,7 @@ a {
 }
 
 .logo-footer {
-  width: 15vh;
+  width: 9vw;
 }
 
 .p-footer {
@@ -282,10 +290,40 @@ a {
   font-family: 'Lato', sans-serif;
   font-size: calc(max(0.8vw, 0.7rem));
   font-weight: lighter;
-  width: 45vw;
 }
 
 @media screen and (min-width: 768px) {
+  /* dark menu */
+  #dark-nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 320px;
+    background-color: #5b606c;
+    padding-right: 8vw;
+  }
+
+  .dark-list {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dark-icon {
+    width: 10px;
+  }
+
+  .dark-list a {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    font-size: calc(max(1vw, 0.5rem));
+    text-decoration: none;
+  }
+
   /* desktop menu */
   .mobile-menu {
     display: none;
@@ -301,6 +339,7 @@ a {
     justify-content: center;
     justify-content: space-around;
     height: 10vh;
+    background-color: #fff;
   }
 
   .logo {
@@ -320,9 +359,14 @@ a {
     font-family: 'Lato', sans-serif;
   }
 
-  a {
+  .nav-list-container a {
     text-decoration: none;
     color: #5b606c;
+  }
+
+  .nav-list-container .home-li {
+    color: #ec5242;
+    font-weight: bold;
   }
 
   /* concert section */
@@ -337,7 +381,6 @@ a {
 
   .concert-description {
     width: 65vw;
-    height: fit-content;
   }
 
   /* past section */
