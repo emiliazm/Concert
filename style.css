@@ -194,7 +194,6 @@ body {
 
 .information-list .material-icons {
   font-size: calc(max(0.5vw, 3rem));
-  flex: 1;
 }
 
 .information-list h3 {
