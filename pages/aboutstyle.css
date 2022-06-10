@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  /* min-width: 320px; */
 }
 
 /* nav */
@@ -16,7 +15,6 @@ body {
 }
 
 #nav-container {
-  /* min-width: 320px; */
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +40,6 @@ body {
   padding: 5%;
   width: 90%;
   height: 100%;
-  /* min-width: 320px; */
 }
 
 .mobile-head-menu {
@@ -97,7 +94,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 15vh 5vw 18vh;
-  /* min-width: 320px; */
 }
 
 .concert-h2 {
@@ -145,7 +141,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 5vw 5vw 10vw;
-  /* min-width: 320px; */
 }
 
 .logo-h2,
@@ -190,7 +185,6 @@ body {
   justify-content: space-between;
   padding: 7vw 5vw;
   border-top: rgba(91, 96, 108, 0.2) 1px solid;
-  /* min-width: 320px; */
 }
 
 .past-list {
@@ -245,7 +239,6 @@ body {
   gap: 8vw;
   padding: 5vw 5vw 10vw;
   background-color: #5b606c;
-  /* min-width: 320px; */
 }
 
 .partners-box {
@@ -262,7 +255,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2vh;
-  /* min-width: 320px; */
 }
 
 .footer-list {
@@ -297,7 +289,6 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* min-width: 320px; */
     background-color: #5b606c;
     padding-right: 8vw;
   }
